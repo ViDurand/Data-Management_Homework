@@ -3,7 +3,9 @@ use sakila;
 -- Query 1:
 -- 		What are the names of all the languages in the database (sorted alphabetically)?
 
-select name from language;
+select l.name 
+from language l
+order by l.name asc;
 
 -- Query 2:
 -- 		Return the full names (first and last) of actors with “SON” in their last name, ordered by their first name.
